@@ -5,6 +5,7 @@ export default function Navbar({ onOpenResumeModal }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
+    { label: 'Ecosystem', href: '#ecosystem' },
     { label: 'Capabilities', href: '#pillars' },
     { label: 'Proof of Work', href: '#gallery' },
     { label: 'Experience', href: '#timeline' },

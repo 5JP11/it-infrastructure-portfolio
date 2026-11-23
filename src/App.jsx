@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './components/common/Navbar';
 import Hero from './components/sections/Hero';
 import VenuesManagedStrip from './components/sections/VenuesManagedStrip';
+import VendorEcosystem from './components/sections/VendorEcosystem';
 import AiOperatorMethodology from './components/sections/AiOperatorMethodology';
 import TechnicalPillars from './components/sections/TechnicalPillars';
 import ProofOfWorkGallery from './components/sections/ProofOfWorkGallery';
@@ -68,6 +69,9 @@ export default function App() {
 
         {/* Minimalist Venues & Branches Managed Logo Strip */}
         <VenuesManagedStrip />
+
+        {/* Enterprise Hardware, Operating Systems & Automation Ecosystem */}
+        <VendorEcosystem />
 
         {/* How I Work: The AI-First Operator (3-Step Callout Strip) */}
         <AiOperatorMethodology />
