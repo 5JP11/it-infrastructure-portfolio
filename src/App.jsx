@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './components/common/Navbar';
 import Hero from './components/sections/Hero';
+import VenuesManagedStrip from './components/sections/VenuesManagedStrip';
 import AiOperatorMethodology from './components/sections/AiOperatorMethodology';
 import TechnicalPillars from './components/sections/TechnicalPillars';
 import ProofOfWorkGallery from './components/sections/ProofOfWorkGallery';
@@ -64,6 +65,9 @@ export default function App() {
       <main className="flex-1">
         {/* Editorial Left-Aligned Hero Section */}
         <Hero onOpenResumeModal={() => setIsResumeOpen(true)} />
+
+        {/* Minimalist Venues & Branches Managed Logo Strip */}
+        <VenuesManagedStrip />
 
         {/* How I Work: The AI-First Operator (3-Step Callout Strip) */}
         <AiOperatorMethodology />

@@ -17,6 +17,42 @@ export const CORE_STATS = [
   { label: 'Fiber & Dual-ISP Networks', value: '99.9% Uptime', description: 'Zero-downtime failover & power conditioning' }
 ];
 
+export const MANAGED_VENUES = [
+  {
+    id: 'secretdoor',
+    name: 'SecretDoor',
+    tagline: 'Flagship Lounge & Bar',
+    logo: '/images/logos/secretdoor.jpg',
+    monogram: 'SD',
+    scope: 'Core Dual-ISP Failover, POS/KDS, 500m Fiber Link, Pro-AV Matrix'
+  },
+  {
+    id: 'luxxe',
+    name: 'Luxxe Cocktail Bar',
+    tagline: 'Cocktail Lounge & Dining',
+    logo: '/images/logos/luxxe.png',
+    monogram: 'LX',
+    scope: 'Network Staging, POS/Cashless Systems, Smart CCTV, Pro-Audio'
+  },
+  {
+    id: 'lucky-als',
+    name: 'Lucky Als Hideout',
+    tagline: 'Entertainment & Bar Venue',
+    logo: '/images/logos/lucky_als.jpg',
+    monogram: 'LA',
+    isLightBg: true,
+    scope: 'Multi-Display AV, IoT Network Isolation, Smart Access, POS'
+  },
+  {
+    id: 'casablanca',
+    name: 'Casablanca RestoBar',
+    tagline: 'Restaurant & Bar Operations',
+    logo: '/images/logos/casablanca.jpg',
+    monogram: 'CB',
+    scope: 'POS/KDS Terminals, Wi-Fi Infrastructure, Surveillance NVR, AV Routing'
+  }
+];
+
 export const AI_OPERATOR_METHODOLOGY = [
   {
     step: '01',
