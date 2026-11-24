@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowDown, ArrowUpRight, Copy, Check, Mail, Phone, MapPin } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, Copy, Check, Mail, Phone, MapPin, Linkedin } from 'lucide-react';
 import { CANDIDATE_INFO, CORE_STATS } from '../../data/galleryData';
 
 export default function Hero({ onOpenResumeModal }) {
@@ -49,6 +49,22 @@ export default function Hero({ onOpenResumeModal }) {
             </a>
           </div>
 
+          <span className="text-zinc-800 hidden sm:inline">/</span>
+
+          <div className="flex items-center gap-1.5">
+            <a
+              href={CANDIDATE_INFO.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-zinc-300 hover:text-white transition-colors"
+              title="View LinkedIn Profile"
+            >
+              <Linkedin className="w-3.5 h-3.5 text-zinc-400" />
+              <span>LinkedIn</span>
+              <ArrowUpRight className="w-2.5 h-2.5 text-zinc-500" />
+            </a>
+          </div>
+
           <span className="text-zinc-800 hidden lg:inline">/</span>
 
           <div className="flex items-center gap-1.5 text-emerald-400 font-medium">
@@ -73,12 +89,12 @@ export default function Hero({ onOpenResumeModal }) {
 
           {/* Profile Photo Avatar Slot */}
           <div className="shrink-0">
-            <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-0.5 border border-zinc-800 bg-[#121214] shadow-md overflow-hidden relative group">
+            <div className="w-24 h-24 md:w-28 md:h-28 rounded-full border border-zinc-800 bg-[#121214] shadow-sm overflow-hidden relative group">
               {!imgError ? (
                 <img
                   src={CANDIDATE_INFO.profilePhoto}
                   alt={CANDIDATE_INFO.fullName}
-                  className="w-full h-full object-cover object-top rounded-full grayscale hover:grayscale-0 transition-all duration-500"
+                  className="w-full h-full object-cover object-top rounded-full transition-all duration-300"
                   onError={() => setImgError(true)}
                 />
               ) : (

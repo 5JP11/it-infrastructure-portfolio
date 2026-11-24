@@ -6,6 +6,7 @@ export const CANDIDATE_INFO = {
   workStatus: 'Open to 100% Remote / WFH & Hybrid Roles (US EST / APAC / Global)',
   email: 'johnpaulonavarro99@gmail.com',
   phone: '+63 915-637-7967',
+  linkedin: 'https://www.linkedin.com/in/john-paulo-navarro-792713212/',
   profilePhoto: '/images/profile_jp.jpg',
   summary: 'Versatile and hands-on IT Operations Lead with over 5 years of experience managing enterprise networks, physical security, high-performance hardware, and cross-functional teams. Uniquely combines physical layer engineering (500m fiber links, MikroTik, Fortinet) with AI-powered rapid application development to streamline business operations. Grounded in an Aircraft Maintenance Technology background, bringing strict procedural compliance, zero-downtime safety protocols, and meticulous documentation to complex IT infrastructure management.'
 };

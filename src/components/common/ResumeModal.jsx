@@ -15,6 +15,7 @@ export default function ResumeModal({ isOpen, onClose }) {
 JOHN PAULO H. NAVARRO
 Senior IT Operations & Infrastructure Lead | Network Engineering | AI-Assisted Systems Builder
 Taguig City, Philippines | ${CANDIDATE_INFO.email} | ${CANDIDATE_INFO.phone}
+LinkedIn: ${CANDIDATE_INFO.linkedin}
 Open to 100% Remote / WFH & Hybrid Roles
 
 PROFESSIONAL SUMMARY:
@@ -137,6 +138,15 @@ ACTIVE UPSKILLING (IN PROGRESS):
               <span>{CANDIDATE_INFO.email}</span>
               <span className="text-zinc-600">/</span>
               <span>{CANDIDATE_INFO.phone}</span>
+              <span className="text-zinc-600">/</span>
+              <a 
+                href={CANDIDATE_INFO.linkedin} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-zinc-300 hover:text-white underline transition-colors"
+              >
+                LinkedIn Profile ↗
+              </a>
             </div>
           </div>
 

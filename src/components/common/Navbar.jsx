@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Linkedin } from 'lucide-react';
+import { CANDIDATE_INFO } from '../../data/galleryData';
 
 export default function Navbar({ onOpenResumeModal }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -38,6 +39,15 @@ export default function Navbar({ onOpenResumeModal }) {
               {link.label}
             </a>
           ))}
+          <a
+            href={CANDIDATE_INFO.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-zinc-400 hover:text-white transition-colors p-1"
+            title="LinkedIn Profile"
+          >
+            <Linkedin className="w-3.5 h-3.5" />
+          </a>
           <button
             onClick={onOpenResumeModal}
             className="text-xs font-mono text-zinc-300 hover:text-white px-2.5 py-1 rounded border border-zinc-800 hover:border-zinc-700 transition-colors"

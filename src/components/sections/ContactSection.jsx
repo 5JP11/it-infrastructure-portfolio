@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Copy, Check, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Copy, Check, Phone, MapPin, Send, Linkedin } from 'lucide-react';
 import { CANDIDATE_INFO } from '../../data/galleryData';
 
 export default function ContactSection({ onOpenResumeModal }) {
@@ -64,6 +64,22 @@ export default function ContactSection({ onOpenResumeModal }) {
                   className="text-zinc-400 hover:text-white transition-colors"
                 >
                   Call
+                </a>
+              </div>
+
+              {/* LinkedIn Box */}
+              <div className="p-3 rounded border border-zinc-800 bg-[#121214] flex items-center justify-between">
+                <div className="flex items-center gap-2 text-zinc-300">
+                  <Linkedin className="w-3.5 h-3.5 text-zinc-400" />
+                  <span>LinkedIn Profile</span>
+                </div>
+                <a
+                  href={CANDIDATE_INFO.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-zinc-400 hover:text-white transition-colors"
+                >
+                  Connect ↗
                 </a>
               </div>
 

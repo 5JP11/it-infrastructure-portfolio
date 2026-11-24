@@ -37,7 +37,7 @@ export default function Footer() {
             <span>{copied ? 'Copied' : CANDIDATE_INFO.email}</span>
           </button>
           <a 
-            href="https://linkedin.com" 
+            href={CANDIDATE_INFO.linkedin} 
             target="_blank" 
             rel="noopener noreferrer" 
             className="hover:text-zinc-300 transition-colors flex items-center gap-1"
