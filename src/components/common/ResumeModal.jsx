@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Printer, Copy, Check, Mail, Phone, MapPin } from 'lucide-react';
+import { X, Printer, Copy, Check, Mail, Phone, MapPin, Download, ExternalLink } from 'lucide-react';
 import { CANDIDATE_INFO, CAREER_TIMELINE, TECHNICAL_COMPETENCIES, ACTIVE_UPSKILLING } from '../../data/galleryData';
 
 export default function ResumeModal({ isOpen, onClose }) {
@@ -27,6 +27,7 @@ CORE COMPETENCIES & TECHNICAL SKILLS:
 - Security & Access Control: ZKTeco Biometrics, Magnetic Glass Door Locks, RFID Provisioning, Smart Locks (Tuya, Loock), Dahua/Hikvision IP Cameras, Thermal IP Systems, AI Face Recognition, Synology Surveillance.
 - AI-Assisted Engineering: Rapid application development & workflow automation via Claude Code, Antigravity, and Bolt.new (Custom HRIS, Local LAN Digital Signage, automated batch PDF/utility generators).
 - Pro-AV & Facilities: Multi-Zone PA Calibration (12"–18" speakers, amps, DJ mixers), Multi-I/O AV Matrix Switching, Local IPTV, Facility Maintenance Management.
+- Hospitality & POS Systems: Qashier POS & QashierHQ (Multi-Terminal & Kitchen Display System [KDS] Tablet Routing, Waitress Handheld Provisioning, 380+ SKU Inventory, Biometric/PIN Timecards, Foodpanda Integration).
 
 PROFESSIONAL EXPERIENCE:
 1. IT Head, Maintenance Manager & Facility Manager
@@ -36,6 +37,7 @@ PROFESSIONAL EXPERIENCE:
    - Architected and deployed a custom HRIS and local LAN Digital Signage application via Synology NAS using AI-assisted engineering tools, significantly reducing administrative overhead.
    - Executed specialized deep hardware servicing on enterprise AI compute infrastructure, meticulously mitigating galvanic corrosion on NVIDIA DGX Station Tesla V100 GPUs and restoring full functionality.
    - Deployed enterprise ZKTeco biometric terminals and magnetic glass door locks, seamlessly integrating RFID access workflows across all commercial venues.
+   - Architected and deployed an end-to-end Qashier POS & Kitchen Display System (KDS) ecosystem across 4 commercial venues—configuring primary registers, waitress mobile ordering handhelds, and tablet KDS screens for real-time order routing, 380+ SKU inventory tracking, biometric/PIN timecards, and Foodpanda integration.
 
 2. Computer IT Support Specialist
    Unified MicroSystems • Dubai, United Arab Emirates (May 2024 – Nov 2024)
@@ -88,9 +90,21 @@ ACTIVE UPSKILLING (IN PROGRESS):
           </h3>
 
           <div className="flex items-center gap-2">
+            <a
+              href={CANDIDATE_INFO.resumePdf}
+              download="John_Paulo_Navarro_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded text-xs font-mono text-zinc-950 bg-white hover:bg-zinc-200 transition-colors font-semibold shadow-sm"
+              title="Download Official PDF Resume"
+            >
+              <Download className="w-3.5 h-3.5" />
+              <span>Download PDF</span>
+            </a>
+
             <button
               onClick={handleCopyText}
-              className="flex items-center gap-1.5 px-2.5 py-1 rounded text-xs font-mono text-zinc-400 hover:text-white border border-zinc-800 hover:border-zinc-700 transition-colors"
+              className="hidden sm:flex items-center gap-1.5 px-2.5 py-1.5 rounded text-xs font-mono text-zinc-400 hover:text-white border border-zinc-800 hover:border-zinc-700 transition-colors"
             >
               {copied ? (
                 <>
@@ -107,15 +121,15 @@ ACTIVE UPSKILLING (IN PROGRESS):
 
             <button
               onClick={handlePrint}
-              className="flex items-center gap-1.5 px-2.5 py-1 rounded text-xs font-mono text-zinc-950 bg-white hover:bg-zinc-200 transition-colors font-medium"
+              className="hidden sm:flex items-center gap-1.5 px-2.5 py-1.5 rounded text-xs font-mono text-zinc-400 hover:text-white border border-zinc-800 hover:border-zinc-700 transition-colors font-medium"
             >
               <Printer className="w-3.5 h-3.5" />
-              <span>Print / PDF</span>
+              <span>Print</span>
             </button>
 
             <button
               onClick={onClose}
-              className="p-1 rounded text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors ml-1"
+              className="p-1.5 rounded text-zinc-400 hover:text-white hover:bg-zinc-800 transition-colors ml-1"
             >
               <X className="w-5 h-5" />
             </button>

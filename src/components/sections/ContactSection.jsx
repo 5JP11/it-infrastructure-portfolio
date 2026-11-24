@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Copy, Check, Phone, MapPin, Send, Linkedin } from 'lucide-react';
+import { Mail, Copy, Check, Phone, MapPin, Send, Linkedin, Download } from 'lucide-react';
 import { CANDIDATE_INFO } from '../../data/galleryData';
 
 export default function ContactSection({ onOpenResumeModal }) {
@@ -83,7 +83,7 @@ export default function ContactSection({ onOpenResumeModal }) {
                 </a>
               </div>
 
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2">
                 <a
                   href={`mailto:${CANDIDATE_INFO.email}?subject=Senior%20IT%20Operations%20%26%20Infrastructure%20Lead%20Inquiry`}
                   className="flex-1 py-2 px-3 text-center rounded bg-white text-zinc-950 font-medium hover:bg-zinc-200 transition-colors"
@@ -94,8 +94,19 @@ export default function ContactSection({ onOpenResumeModal }) {
                   onClick={onOpenResumeModal}
                   className="py-2 px-3 rounded border border-zinc-800 text-zinc-300 hover:border-zinc-700 hover:text-white transition-colors"
                 >
-                  View Resume
+                  Resume
                 </button>
+                <a
+                  href={CANDIDATE_INFO.resumePdf}
+                  download="John_Paulo_Navarro_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="py-2 px-3 rounded border border-zinc-800 text-zinc-300 hover:border-zinc-700 hover:text-white transition-colors flex items-center justify-center gap-1 text-xs"
+                  title="Download Official PDF Resume"
+                >
+                  <Download className="w-3.5 h-3.5 text-zinc-400" />
+                  <span>PDF</span>
+                </a>
               </div>
 
               <div className="pt-4 text-[11px] text-zinc-500 space-y-1">

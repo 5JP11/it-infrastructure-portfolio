@@ -8,6 +8,7 @@ export const CANDIDATE_INFO = {
   phone: '+63 915-637-7967',
   linkedin: 'https://www.linkedin.com/in/john-paulo-navarro-792713212/',
   profilePhoto: '/images/profile_jp.jpg',
+  resumePdf: '/resume/John_Paulo_Navarro_Resume.pdf',
   summary: 'Versatile and hands-on IT Operations Lead with over 5 years of experience managing enterprise networks, physical security, high-performance hardware, and cross-functional teams. Uniquely combines physical layer engineering (500m fiber links, MikroTik, Fortinet) with AI-powered rapid application development to streamline business operations. Grounded in an Aircraft Maintenance Technology background, bringing strict procedural compliance, zero-downtime safety protocols, and meticulous documentation to complex IT infrastructure management.'
 };
 
@@ -132,6 +133,18 @@ export const TECHNICAL_COMPETENCIES = [
       'Facility Maintenance Management: Commercial electrical repairs (Schneider Electric), Daikin AC drain pumps, anti-mold remediation, and site maintenance'
     ],
     technologies: ['Multi-Zone PA Systems', '12"-18" Pro Speakers', 'AV Matrix Switching', 'Local IPTV', 'HDMI over IP', 'Schneider Electric', 'Daikin AC Pumps', 'Facility Operations']
+  },
+  {
+    id: 'hospitality-pos-systems',
+    title: 'Hospitality & POS Systems',
+    summary: 'Enterprise restaurant POS architectures, wireless Kitchen Display System (KDS) routing, and 380+ SKU inventory operations.',
+    bullets: [
+      'Qashier POS & QashierHQ: Multi-terminal setup, primary registers, and waitress handheld provisioning',
+      'Kitchen Display System (KDS): Low-latency wireless tablet order routing between bar, kitchen, and cashier stations',
+      'Inventory & Operations: 380+ SKU live inventory tracking, recipe cost mapping, and multi-branch stock audits',
+      'Platform Integrations: Biometric & PIN employee timecards, Foodpanda delivery API routing, and cashless payment terminals'
+    ],
+    technologies: ['Qashier POS', 'QashierHQ', 'Kitchen Display Systems (KDS)', 'Waitress Handhelds', '380+ SKU Inventory', 'Foodpanda API', 'Biometric Timecards']
   }
 ];
 
@@ -410,7 +423,7 @@ export const CAREER_TIMELINE = [
       'Architected and deployed a custom HRIS and local LAN Digital Signage application via Synology NAS using AI-assisted engineering tools, significantly reducing administrative overhead.',
       'Executed specialized deep hardware servicing on enterprise AI compute infrastructure, meticulously mitigating galvanic corrosion on NVIDIA DGX Station Tesla V100 GPUs and restoring full functionality.',
       'Deployed enterprise ZKTeco biometric terminals and magnetic glass door locks, seamlessly integrating RFID access workflows across all commercial venues.',
-      'Supervised continuous maintenance schedules for commercial HVAC, AC drain pumps, and power distribution systems across all operating locations.'
+      'Architected and deployed an end-to-end Qashier POS & Kitchen Display System (KDS) ecosystem across 4 commercial venues—configuring primary registers, waitress mobile ordering handhelds, and tablet KDS screens for real-time order routing, 380+ SKU inventory tracking, biometric/PIN timecards, and Foodpanda integration.'
     ],
     technologies: ['MikroTik RouterOS v7', 'Aruba LACP', '500m Fiber Optic', 'Synology NAS', 'Claude Code / Antigravity', 'ZKTeco Biometrics', 'NVIDIA DGX Station', 'Team Leadership']
   },

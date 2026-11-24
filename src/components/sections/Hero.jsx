@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowDown, ArrowUpRight, Copy, Check, Mail, Phone, MapPin, Linkedin } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, Copy, Check, Mail, Phone, MapPin, Linkedin, Download, FileText } from 'lucide-react';
 import { CANDIDATE_INFO, CORE_STATS } from '../../data/galleryData';
 
 export default function Hero({ onOpenResumeModal }) {
@@ -127,8 +127,21 @@ export default function Hero({ onOpenResumeModal }) {
             onClick={onOpenResumeModal}
             className="inline-flex items-center gap-2 px-4 py-2.5 rounded border border-zinc-800 text-zinc-300 font-mono text-xs hover:border-zinc-700 hover:text-white transition-colors"
           >
-            <span>Contact / Resume</span>
+            <FileText className="w-3.5 h-3.5 text-zinc-400" />
+            <span>Resume Dossier</span>
           </button>
+
+          <a
+            href={CANDIDATE_INFO.resumePdf}
+            download="John_Paulo_Navarro_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded border border-zinc-800 text-zinc-300 font-mono text-xs hover:border-zinc-700 hover:text-white transition-colors"
+            title="Download Official PDF Resume"
+          >
+            <Download className="w-3.5 h-3.5 text-zinc-400" />
+            <span>Download PDF</span>
+          </a>
 
           <a
             href="#contact"
