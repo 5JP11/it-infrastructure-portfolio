@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowDown, ArrowUpRight, Copy, Check, Mail, Phone, MapPin, Linkedin, Download, FileText } from 'lucide-react';
 import { CANDIDATE_INFO, CORE_STATS } from '../../data/galleryData';
+import TypingTelemetry from './TypingTelemetry';
 
 export default function Hero({ onOpenResumeModal }) {
   const [copiedEmail, setCopiedEmail] = useState(false);
@@ -173,6 +174,9 @@ export default function Hero({ onOpenResumeModal }) {
             </div>
           ))}
         </div>
+
+        {/* Live Typing & Keyboard Telemetry Showcase */}
+        <TypingTelemetry />
       </div>
     </section>
   );
