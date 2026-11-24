@@ -17,34 +17,34 @@ export default function Hero({ onOpenResumeModal }) {
     <section className="pt-20 pb-16 sm:pt-28 sm:pb-20 border-b border-zinc-900">
       <div className="max-w-5xl mx-auto px-6">
         {/* Contact & Location Strip */}
-        <div className="flex flex-wrap items-center gap-y-2 gap-x-4 text-xs font-mono text-zinc-500 mb-8 pb-4 border-b border-zinc-900">
-          <div className="flex items-center gap-1.5 text-zinc-300">
-            <MapPin className="w-3.5 h-3.5 text-zinc-500" />
+        <div className="flex flex-wrap items-center gap-y-2.5 gap-x-4 text-xs sm:text-sm font-mono text-zinc-400 mb-8 pb-4 border-b border-zinc-900">
+          <div className="flex items-center gap-1.5 text-zinc-200 font-medium">
+            <MapPin className="w-4 h-4 text-zinc-400" />
             <span>{CANDIDATE_INFO.location}</span>
           </div>
 
           <span className="text-zinc-800 hidden sm:inline">/</span>
 
-          <div className="flex items-center gap-1.5">
-            <Mail className="w-3.5 h-3.5 text-zinc-500" />
+          <div className="flex items-center gap-1.5 font-medium">
+            <Mail className="w-4 h-4 text-zinc-400" />
             <button
               onClick={handleCopyEmail}
-              className="text-zinc-300 hover:text-white transition-colors flex items-center gap-1"
+              className="text-zinc-200 hover:text-white transition-colors flex items-center gap-1"
               title="Click to copy email address"
             >
               <span>{CANDIDATE_INFO.email}</span>
               {copiedEmail ? (
-                <Check className="w-3 h-3 text-emerald-400 ml-1" />
+                <Check className="w-3.5 h-3.5 text-emerald-400 ml-1" />
               ) : (
-                <Copy className="w-3 h-3 text-zinc-600 hover:text-zinc-400 ml-1" />
+                <Copy className="w-3.5 h-3.5 text-zinc-500 hover:text-zinc-300 ml-1" />
               )}
             </button>
           </div>
 
           <span className="text-zinc-800 hidden sm:inline">/</span>
 
-          <div className="flex items-center gap-1.5 text-zinc-300">
-            <Phone className="w-3.5 h-3.5 text-zinc-500" />
+          <div className="flex items-center gap-1.5 text-zinc-200 font-medium">
+            <Phone className="w-4 h-4 text-zinc-400" />
             <a href={`tel:${CANDIDATE_INFO.phone.replace(/[^0-9+]/g, '')}`} className="hover:text-white transition-colors">
               {CANDIDATE_INFO.phone}
             </a>
@@ -57,20 +57,20 @@ export default function Hero({ onOpenResumeModal }) {
               href={CANDIDATE_INFO.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-zinc-300 hover:text-white transition-colors"
+              className="inline-flex items-center gap-1.5 text-zinc-200 hover:text-white font-medium transition-colors"
               title="View LinkedIn Profile"
             >
-              <Linkedin className="w-3.5 h-3.5 text-zinc-400" />
+              <Linkedin className="w-4 h-4 text-zinc-300" />
               <span>LinkedIn</span>
-              <ArrowUpRight className="w-2.5 h-2.5 text-zinc-500" />
+              <ArrowUpRight className="w-3 h-3 text-zinc-500" />
             </a>
           </div>
 
           <span className="text-zinc-800 hidden lg:inline">/</span>
 
-          <div className="flex items-center gap-1.5 text-emerald-400 font-medium">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-            <span>Open to 100% Remote / WFH &amp; Hybrid</span>
+          <div className="flex items-center gap-1.5 text-emerald-400 font-semibold px-2.5 py-0.5 rounded-full bg-emerald-950/40 border border-emerald-800/60 shadow-xs">
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>Available for Remote / Hybrid / Onsite</span>
           </div>
         </div>
 
@@ -118,17 +118,17 @@ export default function Hero({ onOpenResumeModal }) {
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <a
             href="#gallery"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded bg-white text-zinc-950 font-mono text-xs font-semibold hover:bg-zinc-200 transition-colors"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-white text-zinc-950 font-mono text-xs sm:text-sm font-bold hover:bg-zinc-200 shadow-md transition-all scale-[1.02]"
           >
             <span>View Proof of Work</span>
-            <ArrowDown className="w-3.5 h-3.5" />
+            <ArrowDown className="w-4 h-4" />
           </a>
 
           <button
             onClick={onOpenResumeModal}
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded border border-zinc-800 text-zinc-300 font-mono text-xs hover:border-zinc-700 hover:text-white transition-colors"
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg border border-zinc-700 bg-[#141417] text-zinc-100 font-mono text-xs sm:text-sm font-semibold hover:border-zinc-500 hover:bg-zinc-800 hover:text-white shadow-sm transition-all"
           >
-            <FileText className="w-3.5 h-3.5 text-zinc-400" />
+            <FileText className="w-4 h-4 text-zinc-300" />
             <span>Resume Dossier</span>
           </button>
 
@@ -137,19 +137,19 @@ export default function Hero({ onOpenResumeModal }) {
             download="John_Paulo_Navarro_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded border border-zinc-800 text-zinc-300 font-mono text-xs hover:border-zinc-700 hover:text-white transition-colors"
+            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg border border-zinc-700 bg-[#141417] text-zinc-100 font-mono text-xs sm:text-sm font-semibold hover:border-zinc-500 hover:bg-zinc-800 hover:text-white shadow-sm transition-all"
             title="Download Official PDF Resume"
           >
-            <Download className="w-3.5 h-3.5 text-zinc-400" />
+            <Download className="w-4 h-4 text-emerald-400" />
             <span>Download PDF</span>
           </a>
 
           <a
             href="#contact"
-            className="inline-flex items-center gap-1.5 px-4 py-2.5 text-zinc-400 font-mono text-xs hover:text-zinc-200 transition-colors"
+            className="inline-flex items-center gap-1.5 px-4 py-2.5 text-zinc-300 font-mono text-xs sm:text-sm font-semibold hover:text-white transition-colors"
           >
             <span>Quick Inquiry</span>
-            <ArrowUpRight className="w-3.5 h-3.5" />
+            <ArrowUpRight className="w-4 h-4 text-zinc-400" />
           </a>
         </div>
 

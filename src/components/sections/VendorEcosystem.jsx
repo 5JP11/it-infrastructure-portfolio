@@ -31,20 +31,23 @@ export default function VendorEcosystem() {
           </span>
         </div>
 
-        {/* Minimal Underline Filter Tabs */}
-        <div className="border-b border-zinc-850 mb-8 flex items-center gap-6 overflow-x-auto no-scrollbar">
+        {/* Highlighted Category Filter Tabs */}
+        <div className="mb-8 flex items-center gap-2 sm:gap-2.5 overflow-x-auto no-scrollbar pb-2">
           {VENDOR_CATEGORIES.map((cat) => {
             const isSelected = selectedCategory === cat;
             return (
               <button
                 key={cat}
                 onClick={() => setSelectedCategory(cat)}
-                className={`text-xs font-mono pb-3 border-b-2 whitespace-nowrap transition-colors flex items-center gap-1.5 ${
+                className={`text-xs sm:text-sm font-mono font-bold px-3.5 py-2 rounded-lg whitespace-nowrap transition-all duration-200 flex items-center gap-2 border ${
                   isSelected
-                    ? 'border-white text-zinc-50 font-medium'
-                    : 'border-transparent text-zinc-500 hover:text-zinc-300'
+                    ? 'bg-zinc-100 text-zinc-950 border-white shadow-md scale-[1.02]'
+                    : 'bg-[#121214] border-zinc-800 text-zinc-300 hover:text-white hover:border-zinc-650 hover:bg-zinc-900'
                 }`}
               >
+                {isSelected && (
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                )}
                 <span>{cat}</span>
               </button>
             );

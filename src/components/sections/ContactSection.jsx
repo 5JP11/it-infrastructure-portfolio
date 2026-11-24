@@ -112,7 +112,7 @@ export default function ContactSection({ onOpenResumeModal }) {
               <div className="pt-4 text-[11px] text-zinc-500 space-y-1">
                 <div>Candidate: {CANDIDATE_INFO.fullName}</div>
                 <div>Location: {CANDIDATE_INFO.location}</div>
-                <div>Availability: Full-time / Contractor / Multi-Site Operations</div>
+                <div>Availability: Available for Remote / Hybrid / Onsite</div>
               </div>
             </div>
           </div>

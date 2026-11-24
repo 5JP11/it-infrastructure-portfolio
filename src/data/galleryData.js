@@ -1,9 +1,9 @@
 export const CANDIDATE_INFO = {
-  fullName: 'John Paulo H. Navarro',
-  monogram: 'JP.NAVARRO',
+  fullName: 'John Paulo (JP) Navarro',
+  monogram: 'John Paulo (JP) Navarro',
   headline: 'Senior IT Operations & Infrastructure Lead | Network Engineering | AI-Assisted Systems Builder',
   location: 'Taguig City, Philippines',
-  workStatus: 'Open to 100% Remote / WFH & Hybrid Roles (US EST / APAC / Global)',
+  workStatus: 'Available for Remote / Hybrid / Onsite',
   email: 'johnpaulonavarro99@gmail.com',
   phone: '+63 915-637-7967',
   linkedin: 'https://www.linkedin.com/in/john-paulo-navarro-792713212/',

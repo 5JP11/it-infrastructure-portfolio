@@ -12,11 +12,11 @@ export default function ResumeModal({ isOpen, onClose }) {
   };
 
   const resumePlainText = `
-JOHN PAULO H. NAVARRO
+JOHN PAULO (JP) NAVARRO
 Senior IT Operations & Infrastructure Lead | Network Engineering | AI-Assisted Systems Builder
 Taguig City, Philippines | ${CANDIDATE_INFO.email} | ${CANDIDATE_INFO.phone}
 LinkedIn: ${CANDIDATE_INFO.linkedin}
-Open to 100% Remote / WFH & Hybrid Roles
+Available for Remote / Hybrid / Onsite
 
 PROFESSIONAL SUMMARY:
 ${CANDIDATE_INFO.summary}
