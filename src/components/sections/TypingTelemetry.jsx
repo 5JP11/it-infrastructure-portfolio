@@ -62,8 +62,8 @@ export default function TypingTelemetry() {
         </div>
       </div>
 
-      {/* Precision Cropped Viewport Frame - Wider & Calibrated Height for Typing Area + Result Chart */}
-      <div className="relative w-full h-[155px] sm:h-[180px] overflow-hidden rounded-xl border border-zinc-800/80 bg-[#09090B] shadow-2xl">
+      {/* Precision Cropped Viewport Frame - Calibrated Height & Vertical Focus for Full WPM Stats + Graph */}
+      <div className="relative w-full h-[180px] sm:h-[215px] overflow-hidden rounded-xl border border-zinc-800/80 bg-[#09090B] shadow-2xl">
         <video
           ref={videoRef}
           key={currentRun.src}
@@ -75,7 +75,7 @@ export default function TypingTelemetry() {
           onEnded={handleEnded}
           className="pointer-events-none w-full h-full object-cover mix-blend-lighten contrast-[1.38] brightness-[0.82] saturate-[0.85] transition-opacity duration-500"
           style={{
-            objectPosition: 'center 47%',
+            objectPosition: 'center 38%',
             transform: 'scale(var(--crop-scale, 1)) translateY(var(--crop-y, 0%))',
           }}
         />
