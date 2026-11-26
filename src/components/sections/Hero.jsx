@@ -84,7 +84,7 @@ export default function Hero({ onOpenResumeModal }) {
               Senior IT Operations &amp; Infrastructure Lead
             </h1>
             <p className="text-base sm:text-lg font-mono text-zinc-400">
-              Network Engineering · High-Performance Hardware · AI-Assisted Systems Builder
+              Network Engineering | AI-First Systems Operator
             </p>
           </div>
 

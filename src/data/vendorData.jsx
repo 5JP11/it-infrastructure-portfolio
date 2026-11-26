@@ -124,12 +124,23 @@ export const VENDOR_ECOSYSTEM = [
   // Cloud, MDM & Telecom
   {
     id: 'windows',
-    name: 'Microsoft Windows',
+    name: 'Active Directory & Windows',
     category: 'Cloud & OS',
-    role: 'Windows Server · Active Directory',
+    role: 'Active Directory · GPO Policies · Win Server',
     icon: (
       <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
         <path d="M3 3.5l8-1.1v9.1H3V3.5zm0 9.1h8v9.1l-8-1.1v-8zm9.5-10.3L21 1v10.6h-8.5V2.3zm0 10.3H21V23l-8.5-1.3v-9.1z" />
+      </svg>
+    )
+  },
+  {
+    id: 'knowledge-base',
+    name: 'Visual SOPs & Knowledge Base',
+    category: 'Cloud & OS',
+    role: 'Step-by-Step SOPs · Annotated Screenshots · ITIL',
+    icon: (
+      <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
       </svg>
     )
   },
@@ -178,6 +189,30 @@ export const VENDOR_ECOSYSTEM = [
     )
   },
 
+  // POS & Commercial Facilities
+  {
+    id: 'qashier-pos',
+    name: 'Qashier POS & KDS',
+    category: 'Hardware, POS & Facilities',
+    role: 'Registers · Tablet KDS · Waitress Handhelds · 380+ SKU',
+    icon: (
+      <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M4 3h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V4a1 1 0 011-1zm2 16h12v2H6v-2zm1-12h10v6H7V7z" />
+      </svg>
+    )
+  },
+  {
+    id: 'hvac-systems',
+    name: 'Commercial HVAC & Facilities',
+    category: 'Hardware, POS & Facilities',
+    role: '1.5 HP Split-Type · Centralized · Cassette Units',
+    icon: (
+      <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 14.93V19h-2v-2.07A6.005 6.005 0 016.07 13H4v-2h2.07A6.005 6.005 0 0111 6.07V4h2v2.07A6.005 6.005 0 0117.93 11H20v2h-2.07A6.005 6.005 0 0113 16.93zM12 8a4 4 0 100 8 4 4 0 000-8z" />
+      </svg>
+    )
+  },
+
   // Automation & Industrial PLC
   {
     id: 'siemens',
@@ -211,5 +246,6 @@ export const VENDOR_CATEGORIES = [
   'AI Hardware',
   'Security & Access',
   'Cloud & OS',
+  'Hardware, POS & Facilities',
   'Automation & AI'
 ];

@@ -23,7 +23,7 @@ export default function TypingTelemetry() {
   const currentRun = PLAYLIST[currentIndex];
 
   return (
-    <div className="mt-12 w-full">
+    <div className="mt-12 max-w-3xl">
       {/* Minimalist Telemetry Header Bar */}
       <div className="flex items-center justify-between text-[11px] font-mono text-zinc-500 mb-2.5 px-0.5">
         <div className="flex items-center gap-2 text-zinc-400">
@@ -37,7 +37,7 @@ export default function TypingTelemetry() {
         </div>
 
         <div className="flex items-center gap-2">
-          {/* Subtle click-to-switch indicator pills */}
+          {/* Dynamic Run Pill Switcher */}
           <div className="flex items-center gap-1 bg-zinc-900/90 border border-zinc-800 rounded px-1 py-0.5">
             {PLAYLIST.map((run, idx) => (
               <button
@@ -62,8 +62,8 @@ export default function TypingTelemetry() {
         </div>
       </div>
 
-      {/* Precision Cropped Viewport Frame - Calibrated Height & Vertical Focus for Full WPM Stats + Graph */}
-      <div className="relative w-full h-[180px] sm:h-[215px] overflow-hidden rounded-xl border border-zinc-800/80 bg-[#09090B] shadow-2xl">
+      {/* Precision Cropped Viewport Frame */}
+      <div className="relative w-full max-w-3xl h-[200px] sm:h-[240px] overflow-hidden rounded-xl border border-zinc-800/80 bg-[#09090B] shadow-2xl">
         <video
           ref={videoRef}
           key={currentRun.src}
@@ -73,15 +73,14 @@ export default function TypingTelemetry() {
           playsInline
           preload="auto"
           onEnded={handleEnded}
-          className="pointer-events-none w-full h-full object-cover mix-blend-lighten contrast-[1.38] brightness-[0.82] saturate-[0.85] transition-opacity duration-500"
+          className="pointer-events-none w-full h-full object-cover scale-[1.38] mix-blend-lighten contrast-[1.38] brightness-[0.82] saturate-[0.85] transition-opacity duration-500"
           style={{
-            objectPosition: 'center 38%',
-            transform: 'scale(var(--crop-scale, 1)) translateY(var(--crop-y, 0%))',
+            objectPosition: 'center 45%'
           }}
         />
 
         {/* Soft Inner Edge Vignette so cropped edges fade naturally into the #09090B obsidian page */}
-        <div className="pointer-events-none absolute inset-0 shadow-[inset_0_0_24px_8px_#09090B] rounded-xl" />
+        <div className="pointer-events-none absolute inset-0 shadow-[inset_0_0_36px_18px_#09090B] rounded-xl" />
       </div>
     </div>
   );

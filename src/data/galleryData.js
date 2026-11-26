@@ -1,7 +1,7 @@
 export const CANDIDATE_INFO = {
-  fullName: 'John Paulo (JP) Navarro',
+  fullName: 'John Paulo H. Navarro',
   monogram: 'John Paulo (JP) Navarro',
-  headline: 'Senior IT Operations & Infrastructure Lead | Network Engineering | AI-Assisted Systems Builder',
+  headline: 'Senior IT Operations & Infrastructure Lead | Network Engineering | AI-First Systems Operator',
   location: 'Taguig City, Philippines',
   workStatus: 'Available for Remote / Hybrid / Onsite',
   email: 'johnpaulonavarro99@gmail.com',
@@ -89,14 +89,15 @@ export const TECHNICAL_COMPETENCIES = [
   {
     id: 'hardware-enterprise-systems',
     title: 'Hardware & Enterprise Systems',
-    summary: 'Deep supercomputer servicing, high-availability NAS storage, cloud identity, and endpoint MDM fleet administration.',
+    summary: 'Deep supercomputer servicing, high-availability NAS storage, cloud identity, Active Directory, and endpoint MDM fleet administration.',
     bullets: [
       'NVIDIA DGX Station (Tesla V100 quad-GPU liquid loop & component-level maintenance) & DGX-1 AI Servers',
       'Synology NAS: RS819 & DS920+ DSM configuration, RAID arrays, automated snapshot mirrors & on-prem hosting',
-      'Bare-Metal Ubuntu Servers: Headless Linux administration, systemd service daemons & environment virtualization',
-      'Enterprise Cloud & MDM: Google Workspace Admin, Microsoft 365 (SharePoint, Exchange, Teams), Microsoft Intune MDM, and Avaya IP Telephony'
+      'Active Directory & Cloud Identity: User & device onboarding across Active Directory, Microsoft 365 (SharePoint Online, Exchange), Google Workspace, Avaya IP Telephony, and Microsoft Intune MDM (iOS/Android)',
+      'Knowledge Base & Visual SOP Documentation: Built and maintained comprehensive internal Knowledge Base entries and step-by-step SOPs with annotated screenshots for every issue, fix, and configuration change',
+      'Bare-Metal Ubuntu Servers: Headless Linux administration, systemd service daemons & environment virtualization'
     ],
-    technologies: ['NVIDIA DGX Station', 'Tesla V100 GPU', 'Synology RAID', 'Ubuntu Server', 'Microsoft 365', 'Microsoft Intune MDM', 'Google Workspace', 'Avaya IP Office']
+    technologies: ['Active Directory', 'Knowledge Base & SOPs', 'Microsoft 365', 'Microsoft Intune MDM', 'Google Workspace', 'Avaya IP Office', 'NVIDIA DGX Station', 'Synology RAID', 'Ubuntu Server']
   },
   {
     id: 'security-access-control',
@@ -124,27 +125,27 @@ export const TECHNICAL_COMPETENCIES = [
   },
   {
     id: 'pro-av-facilities',
-    title: 'Pro-AV & Facilities',
-    summary: 'Multi-zone acoustic sound reinforcement, high-definition matrix distribution, IPTV, and commercial facility upkeep.',
+    title: 'Pro-AV & Facilities & HVAC',
+    summary: 'Multi-zone acoustic sound reinforcement, high-definition matrix distribution, commercial HVAC servicing, and facility maintenance.',
     bullets: [
-      'Multi-Zone PA Calibration: Commercial 12"–18" high-capacity speakers, power amplifiers, and multi-channel DJ audio mixers',
-      'Multi-I/O AV Matrix: Seamless video routing across 20+ commercial venue screens with low-latency HDMI-over-IP',
-      'Local IPTV & Signage: Reliable in-venue promotional distribution with synchronized playback across multi-level floors',
-      'Facility Maintenance Management: Commercial electrical repairs (Schneider Electric), Daikin AC drain pumps, anti-mold remediation, and site maintenance'
+      'HVAC Systems Servicing: Direct maintenance, diagnostic troubleshooting, and repairs for 1.5 HP split-type, ceiling-mounted cassette, and centralized HVAC systems across all commercial venues',
+      'Third-Party HVAC Contractor Coordination: Led technical specifications and managed licensed external HVAC contractors for heavy cooling installations across newly acquired venue premises',
+      'Multi-Zone PA Calibration & AV: Commercial 12"–18" high-capacity speakers, power amplifiers, DJ audio mixers, and multi-I/O AV matrix switching across 20+ screens',
+      'Facility Maintenance Operations: Commercial electrical repairs (Schneider Electric), Daikin AC condensate drain pumps, anti-mold remediation, and site maintenance'
     ],
-    technologies: ['Multi-Zone PA Systems', '12"-18" Pro Speakers', 'AV Matrix Switching', 'Local IPTV', 'HDMI over IP', 'Schneider Electric', 'Daikin AC Pumps', 'Facility Operations']
+    technologies: ['1.5 HP Split-Type HVAC', 'Centralized HVAC', 'Cassette AC Units', 'Daikin AC Pumps', 'Contractor Coordination', 'Schneider Electric', 'Multi-Zone PA Systems', 'AV Matrix Switching']
   },
   {
     id: 'hospitality-pos-systems',
-    title: 'Hospitality & POS Systems',
-    summary: 'Enterprise restaurant POS architectures, wireless Kitchen Display System (KDS) routing, and 380+ SKU inventory operations.',
+    title: 'Hospitality & POS Systems (Qashier POS / KDS)',
+    summary: 'Multi-terminal order routing from main registers & waitress handhelds to tablet KDS, 380+ SKU inventory, Foodpanda integration, and biometric timecards.',
     bullets: [
-      'Qashier POS & QashierHQ: Multi-terminal setup, primary registers, and waitress handheld provisioning',
-      'Kitchen Display System (KDS): Low-latency wireless tablet order routing between bar, kitchen, and cashier stations',
-      'Inventory & Operations: 380+ SKU live inventory tracking, recipe cost mapping, and multi-branch stock audits',
-      'Platform Integrations: Biometric & PIN employee timecards, Foodpanda delivery API routing, and cashless payment terminals'
+      'Qashier POS & QashierHQ: Architected and deployed multi-terminal setup, primary registers, and waitress mobile ordering handheld provisioning across 4 venues',
+      'Kitchen Display System (KDS): Low-latency wireless tablet order routing between bar, kitchen, and cashier stations eliminating paper ticket bottlenecks',
+      'Live Inventory & Operations: 380+ SKU real-time inventory tracking, recipe cost mapping, and multi-branch stock audits',
+      'Platform Integrations: Biometric & PIN employee timecards, Foodpanda delivery API routing, and cashless payment terminal integration'
     ],
-    technologies: ['Qashier POS', 'QashierHQ', 'Kitchen Display Systems (KDS)', 'Waitress Handhelds', '380+ SKU Inventory', 'Foodpanda API', 'Biometric Timecards']
+    technologies: ['Qashier POS', 'Tablet KDS Routing', 'Waitress Handhelds', '380+ SKU Inventory', 'Foodpanda Integration', 'Biometric Timecards', 'QashierHQ']
   }
 ];
 
@@ -412,20 +413,37 @@ export const GALLERY_ITEMS = [
 
 export const CAREER_TIMELINE = [
   {
+    period: 'Jul 2026 – Present',
+    role: 'Independent Property & Technical Services Contractor',
+    company: 'The Property Fix',
+    location: 'Freelance / Self-Employed • Metro Manila',
+    badge: 'Independent Technical Contractor',
+    summary: 'Direct residential condominium renovations, complete unit turnovers, electrical repairs, smart-lock retrofitting, drywall patching, precision painting, anti-mold ceiling remediation, and air conditioning condensate drain pump installations.',
+    highlights: [
+      'Directed residential condo renovations and unit turnovers, coordinating full surface restoration, drywall patching, precision painting, and cabinetry alignment.',
+      'Replaced and re-wired Schneider Electric switches, outlets, and residential electrical fixtures in strict compliance with building safety codes.',
+      'Installed and calibrated Daikin air conditioning condensate drain pumps and performed specialized anti-mold ceiling remediation.',
+      'Retrofit high-security smart locks (Tuya, Loock) with precision door mortise preparation, custom strike plates, and wireless bridge calibration.'
+    ],
+    technologies: ['Condo Unit Turnovers', 'Schneider Electric Wiring', 'Daikin AC Drain Pumps', 'Precision Mortise Prep', 'Smart Lock Retrofitting', 'Drywall & Painting', 'Electrical Remediation']
+  },
+  {
     period: 'Nov 2024 – Jul 2026',
     role: 'IT Head, Maintenance Manager & Facility Manager',
     company: 'Magic Carpet Entertainment Consultancy Corp.',
     location: 'Metro Manila, Philippines',
     badge: 'Multi-Site IT & Facilities Leadership',
-    summary: 'Directed end-to-end IT, physical security, Pro-AV, and facility operations across 4 high-traffic commercial venues (SecretDoor, Luxxe Cocktail Bar, Lucky Als Hideout, Casablanca RestoBar), managing a cross-functional team of 7 technicians and maintenance staff.',
+    summary: 'Directed end-to-end IT, physical security, Pro-AV, and facility operations across 4 high-traffic commercial venues (SecretDoor, Luxxe Cocktail Bar, Lucky Als Hideout, Casablanca RestoBar), supervising a 3-person IT team and 4-person maintenance staff.',
     highlights: [
+      'Supervised a 3-person IT team and 4-person maintenance staff across 4 high-traffic commercial venues (SecretDoor, Luxxe Cocktail Bar, Lucky Als Hideout, Casablanca RestoBar), coordinating daily preventative checklists, task delegations, and operational uptime.',
+      'Architected and deployed an end-to-end Qashier POS & Kitchen Display System (KDS) ecosystem across 4 commercial venues—configuring primary registers, waitress mobile ordering handhelds, and tablet KDS screens for real-time order routing, 380+ SKU inventory tracking, biometric/PIN timecards, and Foodpanda integration.',
       'Engineered a 500-meter dual-core fiber optic network with dual-ISP failover and LACP link aggregation (Aruba/MikroTik) to ensure 99.9% uptime between distant branch venues.',
-      'Architected and deployed a custom HRIS and local LAN Digital Signage application via Synology NAS using AI-assisted engineering tools, significantly reducing administrative overhead.',
-      'Executed specialized deep hardware servicing on enterprise AI compute infrastructure, meticulously mitigating galvanic corrosion on NVIDIA DGX Station Tesla V100 GPUs and restoring full functionality.',
-      'Deployed enterprise ZKTeco biometric terminals and magnetic glass door locks, seamlessly integrating RFID access workflows across all commercial venues.',
-      'Architected and deployed an end-to-end Qashier POS & Kitchen Display System (KDS) ecosystem across 4 commercial venues—configuring primary registers, waitress mobile ordering handhelds, and tablet KDS screens for real-time order routing, 380+ SKU inventory tracking, biometric/PIN timecards, and Foodpanda integration.'
+      'Repaired 1.5 HP split-type, ceiling-mounted cassette, and centralized HVAC systems across all venues, while coordinating licensed third-party HVAC contractors for new premises installations.',
+      'Architected and deployed custom internal HRIS and local LAN Digital Signage web applications hosted on Synology NAS using AI developer tools (Claude Code, Antigravity, Bolt.new), significantly reducing administrative overhead and SaaS costs.',
+      'Executed specialized deep hardware servicing on enterprise AI compute infrastructure, meticulously mitigating galvanic corrosion on NVIDIA DGX Station Tesla V100 GPUs and restoring full production compute stability.',
+      'Deployed enterprise ZKTeco biometric terminals and magnetic glass door locks, seamlessly integrating RFID and PIN access workflows across all commercial venues.'
     ],
-    technologies: ['MikroTik RouterOS v7', 'Aruba LACP', '500m Fiber Optic', 'Synology NAS', 'Claude Code / Antigravity', 'ZKTeco Biometrics', 'NVIDIA DGX Station', 'Team Leadership']
+    technologies: ['Qashier POS & KDS', '1.5 HP & Centralized HVAC', 'MikroTik RouterOS v7', 'Aruba LACP', '500m Fiber Optic', 'Synology NAS', 'Claude Code / Antigravity', 'NVIDIA DGX Station', 'ZKTeco Biometrics', 'Third-Party Contractor Coordination']
   },
   {
     period: 'May 2024 – Nov 2024',
@@ -435,12 +453,12 @@ export const CAREER_TIMELINE = [
     badge: 'Enterprise Tier 1–2 Support',
     summary: 'Delivered rapid Tier 1 and Tier 2 remote and on-site technical support for over 30 corporate client organizations across Dubai under strict SLA compliance.',
     highlights: [
+      'Delivered Tier 1–2 remote and on-site technical support for 30+ corporate clients across Dubai—performing desktop/laptop repairs, CPU/GPU replacements, RAM/storage upgrades and data migrations, internal thermal cleaning, and enterprise printer servicing (network folder & scan-to-email setup).',
       'Executed out-of-the-box infrastructure deployments, configuring Fortinet Firewalls (ISP-to-switch topology), network switches, and Synology NAS storage units.',
-      'Administered Avaya IP Telephone systems and successfully onboarded corporate mobile assets (iOS/Android) via Microsoft Intune MDM.',
-      'Managed Microsoft 365 (SharePoint Online site structure & sharing policies, Exchange, Teams, OneDrive) and Google Workspace administrative controls.',
-      'Resolved complex hardware, operating system, and software incidents across Windows and macOS environments with granular documentation.'
+      'Led client user & device onboarding across Active Directory, Microsoft 365 (SharePoint Online, Exchange), Google Workspace, Avaya IP Telephony, and Microsoft Intune MDM (iOS/Android).',
+      'Built and maintained internal Knowledge Base entries and step-by-step SOPs with annotated screenshots for every issue, fix, and configuration change to streamline team handoffs.'
     ],
-    technologies: ['Fortinet FortiGate', 'Microsoft 365', 'SharePoint Online', 'Microsoft Intune MDM', 'Avaya IP Office', 'Synology NAS', 'Google Workspace', 'ITIL SLA Triage']
+    technologies: ['Active Directory', 'Knowledge Base & SOPs', 'Fortinet FortiGate', 'Microsoft 365', 'Microsoft Intune MDM', 'Google Workspace', 'Avaya IP Office', 'Synology NAS', 'ITIL SLA Triage']
   },
   {
     period: 'Dec 2022 – Mar 2024',
@@ -469,21 +487,6 @@ export const CAREER_TIMELINE = [
       'Designed promotional marketing graphics and managed official corporate social media profiles and Google Maps local business presence.'
     ],
     technologies: ['Network Topology Design', 'Structured Cat6 Cabling', 'CCTV & NVR', 'Pro-AV Routing', 'Biometric Integration', 'Digital Media Production']
-  },
-  {
-    period: 'Ongoing Sideline Venture',
-    role: 'Independent Condo Renovation & Repair Contractor',
-    company: 'The Property Fix',
-    location: 'Metro Manila, Philippines',
-    badge: 'Independent Technical Contractor',
-    summary: 'Operate an independent residential condominium maintenance and restoration service handling electrical fixtures, smart-lock retrofits, AC drain pump installations, anti-mold ceiling remediation, and unit turnovers.',
-    highlights: [
-      'Executed complete condo unit restorations (including Twin Towers Condo Unit Restoration) managing electrical rewiring, cabinetry alignment, and surface repairs.',
-      'Replaced and re-wired Schneider Electric switches and outlets in strict compliance with residential electrical safety codes.',
-      'Installed and calibrated Daikin air conditioning drain pumps and performed specialized anti-mold ceiling remediation.',
-      'Retrofit high-security electronic deadbolt smart locks with custom door mortise preparation, precision strike plates, and wireless bridge calibration.'
-    ],
-    technologies: ['Schneider Electric Wiring', 'Daikin AC Drain Pumps', 'Precision Mortise Locksmithing', 'Electrical Testing', 'Structural Remediations']
   },
   {
     period: 'Foundational Education & Apprenticeship',

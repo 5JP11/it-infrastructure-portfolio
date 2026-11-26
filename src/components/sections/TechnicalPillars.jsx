@@ -13,6 +13,7 @@ export default function TechnicalPillars({ onSelectCategory }) {
         return 'Smart Access & Security';
       case 'hardware-enterprise-systems':
         return 'AI Hardware & Servers';
+      case 'hospitality-pos-systems':
       case 'pro-av-facilities':
       default:
         return 'Infrastructure & Ops';

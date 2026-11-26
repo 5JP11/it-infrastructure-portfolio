@@ -12,8 +12,8 @@ export default function ResumeModal({ isOpen, onClose }) {
   };
 
   const resumePlainText = `
-JOHN PAULO (JP) NAVARRO
-Senior IT Operations & Infrastructure Lead | Network Engineering | AI-Assisted Systems Builder
+JOHN PAULO H. NAVARRO
+Senior IT Operations & Infrastructure Lead | Network Engineering | AI-First Systems Operator
 Taguig City, Philippines | ${CANDIDATE_INFO.email} | ${CANDIDATE_INFO.phone}
 LinkedIn: ${CANDIDATE_INFO.linkedin}
 Available for Remote / Hybrid / Onsite
@@ -23,40 +23,49 @@ ${CANDIDATE_INFO.summary}
 
 CORE COMPETENCIES & TECHNICAL SKILLS:
 - Networking & Infrastructure: MikroTik RouterOS (v7), Fortinet Firewalls, Aruba Switches, Dual-ISP Failover & Load Balancing, LACP, Dynamic NAT, 500m Dual-Core Fiber Deployment, SFP Transceivers, Cat6 Cabling.
-- Hardware & Enterprise Systems: NVIDIA DGX Station (Tesla V100 GPU deep maintenance) & DGX-1 AI Servers, Synology NAS (OS & RAID), Bare-Metal Ubuntu Servers, Google Workspace, Microsoft 365 (SharePoint, Exchange, Teams), Microsoft MDM (Intune), Avaya IP Telephony.
+- Hardware & Enterprise Systems: NVIDIA DGX Station (Tesla V100 GPU deep maintenance) & DGX-1 AI Servers, Synology NAS (OS & RAID), Bare-Metal Ubuntu Servers, Active Directory, Microsoft 365 (SharePoint Online, Exchange, Teams), Google Workspace, Microsoft Intune MDM, Avaya IP Telephony, Internal Knowledge Base & Visual SOP Documentation.
 - Security & Access Control: ZKTeco Biometrics, Magnetic Glass Door Locks, RFID Provisioning, Smart Locks (Tuya, Loock), Dahua/Hikvision IP Cameras, Thermal IP Systems, AI Face Recognition, Synology Surveillance.
 - AI-Assisted Engineering: Rapid application development & workflow automation via Claude Code, Antigravity, and Bolt.new (Custom HRIS, Local LAN Digital Signage, automated batch PDF/utility generators).
-- Pro-AV & Facilities: Multi-Zone PA Calibration (12"–18" speakers, amps, DJ mixers), Multi-I/O AV Matrix Switching, Local IPTV, Facility Maintenance Management.
+- Pro-AV & Facilities: Multi-Zone PA Calibration (12"–18" speakers, amps, DJ mixers), Multi-I/O AV Matrix Switching, Local IPTV, Commercial HVAC Servicing (1.5 HP Split-Type to Centralized Systems), Third-Party HVAC Contractor Coordination, Facility Maintenance Management.
 - Hospitality & POS Systems: Qashier POS & QashierHQ (Multi-Terminal & Kitchen Display System [KDS] Tablet Routing, Waitress Handheld Provisioning, 380+ SKU Inventory, Biometric/PIN Timecards, Foodpanda Integration).
 
 PROFESSIONAL EXPERIENCE:
-1. IT Head, Maintenance Manager & Facility Manager
+1. Independent Property & Technical Services Contractor
+   The Property Fix • Freelance / Self-Employed • Metro Manila (Jul 2026 – Present)
+   - Directed residential condo renovations and unit turnovers, coordinating full surface restoration, drywall patching, precision painting, and cabinetry alignment.
+   - Replaced and re-wired Schneider Electric switches, outlets, and residential electrical fixtures in strict compliance with building safety codes.
+   - Installed and calibrated Daikin air conditioning condensate drain pumps and performed specialized anti-mold ceiling remediation.
+   - Retrofit high-security smart locks (Tuya, Loock) with precision door mortise preparation, custom strike plates, and wireless bridge calibration.
+
+2. IT Head, Maintenance Manager & Facility Manager
    Magic Carpet Entertainment Consultancy Corp. • Metro Manila, Philippines (Nov 2024 – Jul 2026)
-   - Directed end-to-end IT, physical security, Pro-AV, and facility operations across 4 high-traffic commercial venues (SecretDoor, Luxxe Cocktail Bar, Lucky Als Hideout, Casablanca RestoBar), managing a cross-functional team of 7 technicians and maintenance staff.
-   - Engineered a 500-meter dual-core fiber optic network with dual-ISP failover and LACP link aggregation (Aruba/MikroTik) to ensure 99.9% uptime between distant branch venues.
-   - Architected and deployed a custom HRIS and local LAN Digital Signage application via Synology NAS using AI-assisted engineering tools, significantly reducing administrative overhead.
-   - Executed specialized deep hardware servicing on enterprise AI compute infrastructure, meticulously mitigating galvanic corrosion on NVIDIA DGX Station Tesla V100 GPUs and restoring full functionality.
-   - Deployed enterprise ZKTeco biometric terminals and magnetic glass door locks, seamlessly integrating RFID access workflows across all commercial venues.
+   - Directed end-to-end IT, physical security, Pro-AV, and facility operations across 4 high-traffic commercial venues (SecretDoor, Luxxe Cocktail Bar, Lucky Als Hideout, Casablanca RestoBar), supervising a 3-person IT team and 4-person maintenance staff.
    - Architected and deployed an end-to-end Qashier POS & Kitchen Display System (KDS) ecosystem across 4 commercial venues—configuring primary registers, waitress mobile ordering handhelds, and tablet KDS screens for real-time order routing, 380+ SKU inventory tracking, biometric/PIN timecards, and Foodpanda integration.
+   - Engineered a 500-meter dual-core fiber optic network with dual-ISP failover and LACP link aggregation (Aruba/MikroTik) to ensure 99.9% uptime between distant branch venues.
+   - Repaired 1.5 HP split-type, ceiling-mounted cassette, and centralized HVAC systems across all venues, while coordinating licensed third-party HVAC contractors for new premises installations.
+   - Architected and deployed custom internal HRIS and local LAN Digital Signage web applications hosted on Synology NAS using AI developer tools (Claude Code, Antigravity, Bolt.new), significantly reducing administrative overhead and SaaS costs.
+   - Executed specialized deep hardware servicing on enterprise AI compute infrastructure, meticulously mitigating galvanic corrosion on NVIDIA DGX Station Tesla V100 GPUs and restoring full production compute stability.
+   - Deployed enterprise ZKTeco biometric terminals and magnetic glass door locks, seamlessly integrating RFID and PIN access workflows across all commercial venues.
 
-2. Computer IT Support Specialist
+3. Computer IT Support Specialist
    Unified MicroSystems • Dubai, United Arab Emirates (May 2024 – Nov 2024)
-   - Delivered rapid Tier 1 and Tier 2 remote and on-site technical support for over 30 corporate client organizations across Dubai under strict SLA compliance.
+   - Delivered Tier 1–2 remote and on-site technical support for 30+ corporate clients across Dubai—performing desktop/laptop repairs, CPU/GPU replacements, RAM/storage upgrades and data migrations, internal thermal cleaning, and enterprise printer servicing (network folder & scan-to-email setup).
    - Executed out-of-the-box infrastructure deployments, configuring Fortinet Firewalls (ISP-to-switch topology), network switches, and Synology NAS storage units.
-   - Administered Avaya IP Telephone systems and successfully onboarded corporate mobile assets (iOS/Android) via Microsoft Intune MDM.
+   - Led client user & device onboarding across Active Directory, Microsoft 365 (SharePoint Online, Exchange), Google Workspace, Avaya IP Telephony, and Microsoft Intune MDM (iOS/Android).
+   - Built and maintained internal Knowledge Base entries and step-by-step SOPs with annotated screenshots for every issue, fix, and configuration change to streamline team handoffs.
 
-3. Operations & IT Manager (General Manager)
+4. Operations & IT Manager (General Manager)
    Magic Carpet Entertainment Consultancy Corp. • Metro Manila, Philippines (Dec 2022 – Mar 2024)
    - Directed daily venue operations, ensuring POS network stability and AV control system reliability to eliminate operational downtime during peak business hours.
    - Introduced structured documentation practices for operational planning, task scheduling, and maintenance pre/post-execution tracking.
+   - Maintained preventive maintenance schedules across high-load commercial audio/video matrix equipment, lighting systems, and guest network bandwidth.
 
-4. Pioneer IT & Digital Media Specialist
+5. Pioneer IT & Digital Media Specialist
    Magic Carpet Entertainment Consultancy Corp. • Metro Manila, Philippines (Dec 2021 – Dec 2022)
    - Served as the founding IT specialist, configuring initial Wi-Fi access networks, local routing, CCTV setups, biometrics, and pro-audio systems for the company's inaugural venue launches.
-
-5. Independent Condo Renovation & Repair Contractor
-   The Property Fix • Metro Manila, Philippines (Ongoing Sideline)
-   - Residential condominium maintenance and restorations: Schneider Electric switch/outlet repairs, Daikin AC drain pumps, anti-mold ceiling remediation, smart-lock retrofitting.
+   - Designed and pulled structured Cat6 cabling, configured core routers, Wi-Fi access points, and security NVR systems from an empty shell.
+   - Built multi-zone commercial Pro-AV sound routing and stage video distribution for high-capacity entertainment zones.
+   - Designed promotional marketing graphics and managed official corporate social media profiles and Google Maps local business presence.
 
 EDUCATION & APPRENTICESHIP:
 - Bachelor of Science in Aircraft Maintenance Technology | Philippine State College of Aeronautics (2019–2021)
